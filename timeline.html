@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{% include carousel.html %}
+
+   <section class="bg-light page-section" id="timeline">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center"><br><br><br>
+          <h1 class="gallery_taital">Timeline</h1>
+        </div>
+      </div><br><br><br>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            {% include timeElement.html period="2009-2010" title="Our Humble Beginnings" text="En toen, op een mooie dag in mei sprongen er ineens schaapjes in de wei!"%}
+            {% include timeElement.html period="2010-2015" orientation="left" title="Our First Steps" text="En toen.."%}
+            {% include timeElement.html period="2016-heden" title="Our Youth" text="En toen.."%}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- End About -->

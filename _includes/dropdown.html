@@ -1,0 +1,14 @@
+<div class="dropdown">
+  {% if include.Action1 %}
+  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{ include.menuNaam }}
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="{{site.url}}/{{ include.Action1 }}.html">{{ include.Action1 }}</a>
+    <a class="dropdown-item" href="{{site.url}}/{{ include.Action2 }}.html">{{ include.Action2 }}</a>
+    <a class="dropdown-item" href="{{site.url}}/{{ include.Action3 }}.html">{{ include.Action3 }}</a>
+  </div>
+  {% else if %}
+  <a class="nav-link" href="{{site.url}}/index.html">{{ include.menuNaam }}</a>
+  {% endif %}
+</div>

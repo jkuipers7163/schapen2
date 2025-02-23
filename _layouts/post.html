@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<h3>{{ page.title }}</h3>
+<p>{{ content }}</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <p>Titel</p>
+    </div>
+    <div class="col">
+      <p>Auteur</p>
+    </div>
+    <div class="col">
+      <p>Datum</p>
+    </div>
+  </div>
+  {% for post in site.posts %}
+  <div class="row">
+    <div class="col">
+      <a href="{{post.url}}">{{post.title}}</a>
+    </div>
+    <div class="col">
+      <a href="{{post.url}}">{{post.author }}</a>
+    </div>
+    <div class="col">
+      <a href="{{post.url}}">{{post.date | date_to_string}}</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>

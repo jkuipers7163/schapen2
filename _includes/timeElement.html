@@ -1,0 +1,59 @@
+{% if include.orientation!="left" %}
+  <li>
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm-4" style="border-right: thin solid #ff0000;">
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4><p>{{include.period}}</p></h4>
+            <h4 class="subheading"><p>{{include.title}}</p></h4>
+          </div>
+          <div class="timeline-body">
+            <div class="text-muted"><p>{{include.text}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4><p></p></h4>
+              <h4 class="subheading"></h4>
+            </div>
+            <div class="timeline-body" style="padding-left: 10px; padding-right: 10px;">
+              {% include person.html name="Piet" pic="bjorntje.jpg"%}
+            </div>
+          </div>
+       </div>
+     </div>
+     <hr style="border: thin solid #ff0000;">
+   </li>
+{% else %}
+<li>
+  <div class="row d-flex justify-content-center">
+    <div class="col-sm-4" style="border: thin solid #ff0000;">
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4><p></p></h4>
+            <h4 class="subheading"></h4>
+          </div>
+          <div class="timeline-body" style="padding-left: 10px; padding-right: 10px;">
+            {% include person.html name="Piet" pic="bjorntje.jpg"%}
+          </div>
+        </div>
+     </div>
+     <div class="col-sm-4" style="border-right: thin solid #ff0000;">
+       <div class="timeline-panel">
+         <div class="timeline-heading">
+           <h4><p>{{include.period}}</p></h4>
+           <h4 class="subheading"><p>{{include.title}}</p></h4>
+         </div>
+         <div class="timeline-body">
+           <div class="text-muted"><p>{{include.text}}</p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <hr style="border: thin solid #ff0000;">
+ </li>
+{% endif %}
