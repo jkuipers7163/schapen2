@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "De website is van start!"
+title:  "De website is van start gegaan!"
 author: Jeroen Kuipers
 date:   2025-02-04 09:19:15 +0100
 categories: jekyll update
