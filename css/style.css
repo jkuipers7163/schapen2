@@ -268,7 +268,6 @@ button {
 .banner_section {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
     background-image: url(../images/img-4.jpg);
     height: auto;
     background-size: 100%;
