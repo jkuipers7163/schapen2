@@ -7,4 +7,4 @@ categories: jekyll update
 ---
 Hoera, de website van de Schapenstal staat online!
 
-![My helpful screenshot]( /images/sheep/feest.jpg)
+![My helpful screenshot]( /schapen2/images/sheep/feest.jpg)
